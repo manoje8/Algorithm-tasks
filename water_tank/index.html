@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Water tank</title>
+</head>
+<body>
+    <div id="container">
+        <div class="input-form">
+            <div>
+                <label for="userInput">Enter the value: </label>
+                <input type="text" id="userInput" placeholder="1, 2, 3, 4, etc." autocomplete="off">    
+            </div>
+            <button onclick="handleSubmit()">Click</button>
+        </div>
+        <div id="input-validation">
+            <p id="error"></p>
+        </div>
+        <div id="graph-container">
+        </div>
+    </div>
+    
+
+    <footer>
+        <script src="./script.js"></script>
+    </footer>
+</body>
+</html>
