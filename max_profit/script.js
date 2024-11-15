@@ -94,6 +94,20 @@ function displayResult(maxIndexes, buildingCount)
     })
 }
 
+function possibleCombination(building, earnings)
+{
+    createHeading("Possible Combination")
+    let ol = document.createElement('ol')
+    building.forEach((val, id) => {
+        let p = document.createElement("li");
+        p.style.textAlign = "left"
+        p.innerHTML = `T:${val.T} P:${val.P} C:${val.C} = ${earnings[id]}`;
+        ol.append(p)
+    })
+    result.append(ol)
+
+}
+
 // Input Validation
 function inputValidation(unit) {
     if (!unit || isNaN(unit)) {
@@ -140,6 +154,9 @@ function handleClick() {
     // Output the result
     displayResult(maxIndexes, buildingCountForMax)
     
+
+    possibleCombination(getBuildingCounts(allCombinations), calculateTotalEarnings(allEarnings))
+
     // Reset input fields
     inputUnit.value = '';
 }

@@ -1,3 +1,8 @@
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     padding: 15px;
 }
@@ -40,6 +45,23 @@
     background-color: rgb(110, 110, 110);
 }
 
+table {
+    border: 1px solid rgb(140 140 140);
+}
+  
+th,
+td {
+    padding: 5px;
+    border: 1px solid rgb(160 160 160);
+}
+
+.question {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+
 
 #result {
     padding: 5px;
@@ -61,4 +83,8 @@
     color: rgb(222, 221, 223);
     padding: 0;
     margin-bottom: 0;
+}
+
+#result ol {
+    color: rgb(222, 221, 223);
 }
